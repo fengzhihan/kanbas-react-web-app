@@ -1,24 +1,93 @@
 <!-- Assignments
 <a href="/Kanbas/Courses/Assignments/AssignmentEditor/screen.html">Assignment 1</a> -->
 
-<table>
-    <tr>
-        <td valign="top">
-            <ul>
-                <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
-                <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
-                <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
-                <li><a href="/Kanbas/Calendar/screen.html">Calendar</a></li>
-                <li><a href="/Kanbas/Inbox/screen.html">Inbox</a></li>
-                <li><a href="/Kanbas/Common/screen.html">Commons</a></li>
-                <li><a href="/Kanbas/Help/screen.html">Help</a></li>
-                <li><a href="/Kanbas/History/screen.html">History</a></li>
-                <li><a href="/Kanbas/Studio/screen.html">Studio</a></li>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/Kanbas/KanbasNavigation/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/CourseNavigation/index.css" />
+    <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/vendors/bootstrap/css/bootstrap.min.css" />
+</head>
+
+<body>
+    <div class="d-block d-md-none">
+        <a href="/Kanbas/KanbasNavigation">Kanbas Navigator</a>
+        <a href="/Kanbas/Courses/CourseNavigation">Course Navigator</a>
+    </div>
+
+    <div class="wd-flex-row-container">
+        <div class="wd-bg-color-black d-none d-md-block">
+            <ul class="wd-kanbas-navigation">
+
+                <li>
+                    <a href="/Kanbas/Account/Profile/screen.html">
+                        <i id="special" class="fa fa-user" aria-hidden="true"></i>
+                        Account
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/Kanbas/Dashboard/screen.html">
+                        <i class="fa fa-tachometer" aria-hidden="true"></i>
+                        Dashboard
+                    </a>
+                </li>
+
+                <li class="wd-active">
+                    <a href="/Kanbas/Courses/Home/screen.html">
+                        <i class="fa regular fa-book" aria-hidden="true"></i>
+                        Courses
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/Kanbas/Calendar/screen.html">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        Calendar
+                    </a>
+                </li>
+
+                <li><a href="/Kanbas/Messages/screen.html">
+                        <i class="fa fa-inbox" aria-hidden="true"></i> <br />
+                        Inbox
+                    </a>
+                </li>
+
+                <li><a href="/Kanbas/History/screen.html">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        History
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/Kanbas/Studio/screen.html">
+                        <i class="fa fa-laptop" aria-hidden="true"></i>
+                        Studio
+                    </a>
+                </li>
+
+                <li><a href="/Kanbas/Common/screen.html">
+                        <i class="fa fa-compass" aria-hidden="true"></i>
+                        Commons
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="/Kanbas/Help/screen.html">
+                        <i class="fa solid fa-question" aria-hidden="true"></i> <br />
+                        Help
+                    </a>
+                </li>
+
             </ul>
-        </td>
-        <td valign="top">
-            <ul>
-                <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+        </div>
+
+        <div>
+            <ul class="wd-course-navigation d-none d-md-block">
+                <li class="wd-active"><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
                 <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
                 <li>
                     <a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a>
@@ -39,8 +108,10 @@
                 <li><a href="/Kanbas/Courses/Syllabus/screen.html">Syllabus</a></li>
                 <li><a href="/Kanbas/Courses/ZoomMeetings/screen.html">ZoomMeetings</a></li>
             </ul>
-        </td>
-        <td valign="top">
+        </div>
+
+
+        <div valign="top">
             <select>
                 <option>SpeedGrader</option>
                 <option>Next</option>
@@ -111,6 +182,7 @@
             <button><a href="/Kanbas/Courses/Assignments/screen.html">Cancel</a></button>
             <button><a href="/Kanbas/Courses/Assignments/screen.html">Save</a></button>
 
-        </td>
-    </tr>
-</table>
+        </div>
+</body>
+
+</html>

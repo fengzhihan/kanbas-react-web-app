@@ -1,22 +1,92 @@
-<table>
-    <tr>
-        <td valign="top">
-            <ul>
-                <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
-                <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
-                <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
-                <li><a href="/Kanbas/Calendar/screen.html">Calendar</a></li>
-                <li><a href="/Kanbas/Inbox/screen.html">Inbox</a></li>
-                <li><a href="/Kanbas/Common/screen.html">Commons</a></li>
-                <li><a href="/Kanbas/Help/screen.html">Help</a></li>
-                <li><a href="/Kanbas/History/screen.html">History</a></li>
-                <li><a href="/Kanbas/Studio/screen.html">Studio</a></li>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/Kanbas/KanbasNavigation/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Account/Profile/index.css" />
+    <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="/lib/bootstrap/bootstrap.min.css" />
+</head>
+
+<body>
+
+    <div class="d-block d-md-none">
+        <a href="/Kanbas/KanbasNavigation">Kanbas Navigator</a>
+        <a href="/Kanbas/Courses/CourseNavigation">Course Navigator</a>
+    </div>
+
+    <div class="wd-flex-row-container">
+        <div class="wd-bg-color-black d-none d-md-block">
+            <ul class="wd-kanbas-navigation">
+
+                <li class="wd-active">
+                    <a href="/Kanbas/Account/Profile/screen.html">
+                        <i id="special" class="fa fa-user" aria-hidden="true"></i>
+                        Account
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/Kanbas/Dashboard/screen.html">
+                        <i class="fa fa-tachometer" aria-hidden="true"></i>
+                        Dashboard
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/Kanbas/Courses/Home/screen.html">
+                        <i class="fa regular fa-book" aria-hidden="true"></i>
+                        Courses
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/Kanbas/Calendar/screen.html">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        Calendar
+                    </a>
+                </li>
+
+                <li><a href="/Kanbas/Messages/screen.html">
+                        <i class="fa fa-inbox" aria-hidden="true"></i> <br />
+                        Inbox
+                    </a>
+                </li>
+
+                <li><a href="/Kanbas/History/screen.html">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        History
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/Kanbas/Studio/screen.html">
+                        <i class="fa fa-laptop" aria-hidden="true"></i>
+                        Studio
+                    </a>
+                </li>
+
+                <li><a href="/Kanbas/Common/screen.html">
+                        <i class="fa fa-compass" aria-hidden="true"></i>
+                        Commons
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="/Kanbas/Help/screen.html">
+                        <i class="fa solid fa-question" aria-hidden="true"></i> <br />
+                        Help
+                    </a>
+                </li>
             </ul>
-        </td>
-        <td valign="top">
-            <ul>
+        </div>
+
+
+        <div>
+            <ul class="wd-profile-navigation d-none d-md-block">
                 <li><a href="/Kanbas/Account/Notifications/screen.html">Notification</a></li>
-                <li><a href="/Kanbas/Account/Profile/screen.html">Profile</a></li>
+                <li class="wd-active"><a href="/Kanbas/Account/Profile/screen.html">Profile</a></li>
                 <li><a href="/Kanbas/Account/Files/screen.html">Files</a></li>
                 <li><a href="/Kanbas/Account/Settings/screen.html">Settings</a></li>
                 <li><a href="/Kanbas/Account/ePortfolios/screen.html">ePortfolios</a></li>
@@ -25,57 +95,76 @@
                 <li><a href="/Kanbas/Account/Qwickly Course Tools/screen.html">Qwickly Course Tools</a></li>
                 <li><a href="/Kanbas/Account/Global Announcements/screen.html">Global Announcements</a></li>
             </ul>
-        </td>
-        <td valign="top">
+        </div>
 
-            <h2>Hannah Chiu</h2>
 
-            <form action="/Kanbas/Account/Profile/screen.html">
-                Name: <input name="fullName" type="text" value="Hannah Chiu" /> <br />
-                Pronounce:
-                <select name="" id="">
-                    <option value="">None</option>
-                </select>
+        <div class="wd-flex-grow-1">
+            <td valign="top">
+                <h2>Hannah Chiu</h2>
                 <br />
-                title: <input name="" type="text" value="" /> <br />
+                <button style="float:right;">
+                    <a href="/Kanbas/Account/Profile/screen.html">
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                        Cancel Editing</a></button>
 
-                <h3>Contact</h3>
-                No registered services, you can add some on the <a
-                    href="/Kanbas/Account/Settings/screen.html">settings</a>
-                page.
-                <br />
 
-                <h3>Biography</h3> <br />
-                <textarea name="biography">
+                <div>
+                    <form action="/Kanbas/Account/Profile/screen.html">
+
+                        <label for="name" class="form-label">Name:</label> <br/>
+                        <input name="fullName" class="form-label" type="text" value="Hannah Chiu" /> <br />
+
+                        Pronounce: <br />
+                        <select name="" id="">
+                            <option value="">None</option>
+                        </select>
+                        <br />
+                        title: <br /> <input name="" type="text" value="" /> <br />
+
+                        <h3>Contact</h3>
+                        No registered services, you can add some on the <a
+                            href="/Kanbas/Account/Settings/screen.html">settings</a>
+                        page.
+                        <br />
+
+                        <h3>Biography</h3> <br />
+                        <textarea name="biography">
 Faculty, Software Engineer, AI, Space, and renewable enthusiast
     </textarea>
-                <br />
+                        <br />
+                        <h3>Links</h3>
+                        <ul>
+                            <li>
+                                <a href="www.youtube.com">YouTube</a>
+                            </li>
+                        </ul> <br />
 
-                <h3>Links</h3>
-                <ul>
-                    <li>
-                        <a href="www.youtube.com">YouTube</a>
-                    </li>
-                </ul> <br />
+                        <table>
+                            <th>
+                                <tr>
+                                    <td><b>Title</b></td>
+                                    <td><b>URL</b></td>
+                                </tr>
+                            </th>
+                            <tbody>
+                                <tr>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                </tr>
+                            </tbody>
+                        </table> <br />
+                        <button>Remove</button> <br />
+                        <button>Add another link</button> <br />
+                        <button><a href="/Kanbas/Account/Profile/screen.html">Cancel</a> </button>
+                        <button id="save" type="button" class="btn btn-danger"><a href="/Kanbas/Account/Profile/screen.html">Save
+                                Profile</a> </button>
+                    </form>
+                    </tr>
+                    </table>
+                </div>
 
-                <table>
-                    <th>
-                        <tr>
-                            <td><b>Title</b></td>
-                            <td><b>URL</b></td>
-                        </tr>
-                    </th>
-                    <tbody>
-                        <tr>
-                            <td><input type="text"></td>
-                            <td><input type="text"></td>
-                        </tr>
-                    </tbody>
-                </table> <br />
-                <button>Remove</button> <br />
-                <button>Add another link</button> <br />
-                <button><a href="/Kanbas/Account/Profile/screen.html">Edit Profile</a> </button>
-                <button><a href="/Kanbas/Account/Profile/screen.html">Cancel Editing</a> </button>
-            </form>
-    </tr>
-</table>
+        </div>
+
+</body>
+
+</html>
