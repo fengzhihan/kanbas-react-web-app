@@ -16,7 +16,7 @@
 //     );
 // }
 // export default Labs;
-import Nav from "../Nav";
+// import Nav from "../Nav";
 import { Route, Routes, Link, useLocation, Navigate } from "react-router-dom";
 import Assignment3 from "./a3";
 import Assignment4 from "./a4";

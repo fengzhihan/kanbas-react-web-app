@@ -3,7 +3,7 @@ import "./index.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function CourseNavigation() {
-    const links = ["Home", "Modules", "Assignments", "Grades"];
+    const links = ["Home", "Modules", "Assignments", "Grades", "Announcements", "Collaborations", "Discussions", "Files", "Outcomes", "Pages", "PanoptoVideo", "People", "Piazza"];
     const { courseId } = useParams();
     const { pathname } = useLocation();
     return (

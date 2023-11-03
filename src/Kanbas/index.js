@@ -1,5 +1,5 @@
 import { Route, Routes, Navigate } from "react-router";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import KanbasNavigation from "./KanbasNavigation";
 import Courses from "./Courses";
 import Account from "./Account";
@@ -54,7 +54,12 @@ function Kanbas() {
                             updateCourse={updateCourse} />
                         } />
                         <Route path="Courses/:courseId/*" element={<Courses courses={courses} />} />
-                        <Route path="Calendar" element={<h1>Calendar</h1>} />
+                        {/* <Route path="Calendar" element={<h1>Calendar</h1>} />
+                        <Route path="Inbox" element={<Account />} />
+                        <Route path="History" element={<Account />} />
+                        <Route path="Studio" element={<Account />} />
+                        <Route path="Commons" element={<Account />} />
+                        <Route path="Help" element={<Account />} /> */}
                     </Routes>
                 </div>
             </div>

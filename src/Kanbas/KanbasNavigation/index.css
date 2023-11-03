@@ -1,5 +1,6 @@
 .wd-kanbas-navigation .wd-icon {
     font-size: 2em;
+    color: red;
 }
 
 .wd-kanbas-navigation .list-group-item:first-child,
@@ -13,7 +14,7 @@
     background-color: black;
     list-style: none;
     padding: 0px;
-    width: 80px;
+    width: 10px;
     margin: 0px;
 }
 
