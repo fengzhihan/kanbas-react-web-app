@@ -11,15 +11,16 @@ import Grades from "./Grades";
 import "./index.css";
 
 
-function Courses() {
+function Courses({ courses }) {
     const { courseId } = useParams();
-    const { pathname } = useLocation();
-    const [empty, kanbas, courses, id, screen] = pathname.split("/");
-    const course = db.courses.find((course) => course._id === courseId);
+    // const { pathname } = useLocation();
+    // const [empty, kanbas, courses, id, screen] = pathname.split("/");
+    const course = courses.find((course) => course._id === courseId);
     return (
         <div>
             <div>
-                <h5 className="course-head"> {course.number} - {screen}
+                <h5 className="course-head"> 
+                {/* {course.number} - {screen} */}
                     <button className="x-icon btn btn-secondary">Student View</button>
                 </h5>
                 <div className="course-head-line"><hr /></div>
