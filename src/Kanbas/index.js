@@ -15,6 +15,7 @@ import axios from "axios";
 function Kanbas() {
     const [courses, setCourses] = useState([]);
     const URL = "https://kanbas-node-server-app-9gbn.onrender.com/api/courses";
+    // const URL = "http://localhost:4000/api/courses"
     const findAllCourses = async () => {
         const response = await axios.get(URL);
         setCourses(response.data);
@@ -67,9 +68,9 @@ function Kanbas() {
     //     );
     // }
 
-    const updateCourse = async (course) => {
+    const updateCourse = async (c) => {
         const response = await axios.put(
-            `${URL}/${course._id}`,
+            `${URL}/${c._id}`,
             course
         );
         setCourses(

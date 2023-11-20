@@ -119,6 +119,10 @@ import {
 } from "./modulesReducer";
 import { createModule, findModulesForCourse } from "./client";
 import * as client from "./client";
+import * as modulesReducer from './modulesReducer.js'
+
+
+
 function ModuleList() {
     const { courseId } = useParams();
     const modules = useSelector((state) => state.modulesReducer.modules);
@@ -129,16 +133,18 @@ function ModuleList() {
             .then((modules) =>
                 dispatch(setModules(modules))
             );
-    }, [courseId]);
+    }, [courseId, dispatch]);   
 
     const handleAddModule = () => {
         createModule(courseId, module).then((module) => {
             dispatch(addModule(module));
         });
     };
-    const handleDeleteModule = (moduleId) => {
+    const handleDeleteModule = (moduleId) => { 
+        console.log('deleteModule')
         client.deleteModule(moduleId).then((status) => {
-            dispatch(deleteModule(moduleId));
+            dispatch(modulesReducer.deleteModule(moduleId));
+            console.log('moduleId', moduleId)
         });
     };
     const handleUpdateModule = async () => {

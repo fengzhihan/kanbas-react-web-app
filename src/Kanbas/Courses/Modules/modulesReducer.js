@@ -72,8 +72,10 @@ const modulesSlice = createSlice({
             ];
         },
         deleteModule: (state, action) => {
+            console.log('deleteReducer')
             state.modules = state.modules.filter(
                 (module) => module._id !== action.payload
+                
             );
         },
         updateModule: (state, action) => {
