@@ -57,7 +57,7 @@ function EncodingParametersInURLs() {
 
             <h3>Path Parameters</h3>
             <a
-                href={`https://kanbas-node-server-app-9gbn.onrender.com0/a5/add/${a}/${b}`}
+                href={`https://kanbas-node-server-app-9gbn.onrender.com/a5/add/${a}/${b}`}
                 className="btn btn-primary">
                 Add {a} + {b}
             </a>
