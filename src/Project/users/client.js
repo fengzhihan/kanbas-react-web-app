@@ -2,7 +2,8 @@ import axios from "axios";
 const request = axios.create({
   withCredentials: true,
 });
-export const BASE_API = process.env.REACT_APP_BASE_API_URL || "https://kanbas-node-server-app-a6-mvft.onrender.com/";
+export const BASE_API = "https://kanbas-node-server-app-a6-mvft.onrender.com/";
+//https://kanbas-node-server-app-a6-mvft.onrender.com/
 export const USERS_API = `${BASE_API}/api/users`;
 
 
