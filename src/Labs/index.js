@@ -1,22 +1,3 @@
-// import Assignment3 from "./a3";
-// // import { Link } from "react-router-dom";
-// import Nav from "../Nav";
-
-// function Labs() {
-//     return (
-//         <div className="container">
-//             <Nav/>
-//             {/* <Link to="/hello">Hello</Link> |
-//             <Link to="/Labs/a3">A3</Link> |
-//             <Link to="/Kanbas">Kanbas</Link> */}
-//             <Assignment3 />
-
-
-//         </div>
-//     );
-// }
-// export default Labs;
-// import Nav from "../Nav";
 import { Route, Routes, Link, useLocation, Navigate } from "react-router-dom";
 import Assignment3 from "./a3";
 import Assignment4 from "./a4";
@@ -31,8 +12,9 @@ function Labs() {
     return (
         <Provider store={store}>
             <div>
-
                 <nav className="nav nav-tabs mb-2">
+                <Link className="nav-link" to="/Project">
+                       Project</Link>
                     <Link className="nav-link" to="/Labs">
                         Labs</Link>
                     <Link className="nav-link" to="/hello">
@@ -40,10 +22,6 @@ function Labs() {
                     <Link className="nav-link" to="/Kanbas">
                         Kanbas</Link>
                 </nav>
-
-
-
-
                 <h1>Labs</h1>
                 <div className="nav nav-pills">
                     <Link
@@ -71,20 +49,15 @@ function Labs() {
                         Assignment 6
                     </Link>
                 </div>
-
                 <Routes>
-
                     <Route path="/" element={<Navigate to="a5" />} />
                     <Route path="a3" element={<Assignment3 />} />
                     <Route path="a4/*" element={<Assignment4 />} />
                     <Route path="a5" element={<Assignment5 />} />
                     <Route path="a6" element={<Assignment6 />} />
                 </Routes>
-
             </div>
         </Provider>
-
     );
 }
-
 export default Labs;
